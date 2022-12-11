@@ -22,7 +22,7 @@
         <div id="qbcore-inventory">
             <div class="inventory-info">
                 <div class="player-inv-info">
-                    <span id="player-inv-label">Jogador</span><br>
+                    <span id="player-inv-label">Spiller</span><br>
                     <!-- <img class="weight-img" src="images/weight.png"> -->
                         <div>
                             <div id="progressbar">
@@ -52,13 +52,13 @@
                     <div class="inv-options-list">
                         <img class="brand-logo" src="./images/lj-symbol.svg"></img>
 <input type="number" id="item-amount" class="inv-option-item" min=1 max="10000" placeholder="Amount" pattern="[0-9]" onfocus="this.value=''" placeholder="" oninput="validity.valid||(value='');"></input>
-                        <div class="inv-option-item" id="item-use"><p>Usar</p></div>
+                        <div class="inv-option-item" id="item-use"><p>Bruk</p></div>
                         <!-- <img class="inv-option-hand" id= "item-use" src="images/hand-1.png"> -->
-                        <div class="inv-option-item" id="item-give"><p>Dar</p></div>
-                        <div class="inv-option-item" id="inv-close"><p>Fechar</p></div>
+                        <div class="inv-option-item" id="item-give"><p>Gi</p></div>
+                        <div class="inv-option-item" id="inv-close"><p>Lukk</p></div>
                         <div class="combine-option-container">
-                            <div class="btn-combine CombineItem"><p>Combinar</p></div>
-                            <div class="btn-combine SwitchItem"><p>Trocar</p></div>
+                            <div class="btn-combine CombineItem"><p>Kombiner</p></div>
+                            <div class="btn-combine SwitchItem"><p>Bytt</p></div>
                         </div>
                     </div>
                 </div>
@@ -89,7 +89,7 @@
                   <q-dialog v-model="options">
                     <q-card>
                       <q-card-section>
-                        <div class="text-h6">Opções</div>
+                        <div class="text-h6">Innstillinger</div>
                       </q-card-section>
               
                       <q-card-section class="q-pt-none">
@@ -99,8 +99,8 @@
                                 <q-checkbox dark v-on:click="select($event)" v-model="showblur" color="checkbox"></q-checkbox>
                             </q-item-section>
                             <q-item-section>
-                                <q-item-label class="text-check">Mostrar/Desativar Blur</q-item-label>
-                                <q-item-label caption>Isto desativa / ativa o blur.</q-item-label>
+                                <q-item-label class="text-check">Vis/deaktiver Blur</q-item-label>
+                                <q-item-label caption>Dette deaktiverer / aktiverer blur.</q-item-label>
                             </q-item-section>
                             </q-item>
                         </div>
@@ -115,7 +115,7 @@
                   <q-dialog position="right" v-model="help">
                     <q-card style="max-width: 786px; padding: 40px 20px 40px 30px; bottom: 2.5vh; right: 2.25vw;">
                       <q-card-section>
-                        <div class="text-h6">Ajuda:</div>
+                        <div class="text-h6">Hjelp:</div>
                       </q-card-section>
               
                       <q-card-section class="q-pt-none">
@@ -167,7 +167,7 @@
         <div class="weapon-attachments-container">
             <div class="weapon-attachments-container-title">Pistol | <span style="font-size: 2vh;">9mm</span></div>
             <div class="weapon-attachments-container-description">This is a water gun yaay ...</div>
-            <div class="weapon-attachments-container-details"><span style="font-weight: bold; letter-spacing: .1vh;">Serial Number</span><br> 12345678<br><br><span style="font-weight: bold; letter-spacing: .1vh;">Durability</span> <div class="weapon-attachments-container-detail-durability"><div class="weapon-attachments-container-detail-durability-total"></div></div></div>
+            <div class="weapon-attachments-container-details"><span style="font-weight: bold; letter-spacing: .1vh;">Serie nummer</span><br> 12345678<br><br><span style="font-weight: bold; letter-spacing: .1vh;">Durability</span> <div class="weapon-attachments-container-detail-durability"><div class="weapon-attachments-container-detail-durability-total"></div></div></div>
             <img src="./attachment_images/weapon_pistol.png" class="weapon-attachments-container-image">
 
             <div class="weapon-attachments-title"><span style="font-weight: bold; letter-spacing: .1vh;">Attachments</span></div>
@@ -176,7 +176,7 @@
 
             <div class="weapon-attachments-remove"><i class="fas fa-trash"></i></div>
 
-            <div class="weapon-attachments-back"><p>RETURN</p></div>
+            <div class="weapon-attachments-back"><p>TILBAKE</p></div>
         </div>
         <div class="itemboxes-container"></div>
         <div class="itembox-container template"></div>
